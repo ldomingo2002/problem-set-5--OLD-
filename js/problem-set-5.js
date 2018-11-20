@@ -28,10 +28,12 @@ function mario() {
 
   // WRITE YOUR EXERCISE 1 CODE HERE
 
+blocks = '#'
+
 height = prompt("Enter a whole number between 1 and 23");
 
 if (height >= 1 && height <= 23){
-
+let block = height * block; 
   }
 }else{
   alert('Please pick a number between 1 and 23');
