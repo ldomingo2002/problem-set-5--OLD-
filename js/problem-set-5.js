@@ -28,6 +28,18 @@ function mario() {
 
   // WRITE YOUR EXERCISE 1 CODE HERE
 
+height = prompt("Enter a whole number between 1 and 23");
+
+if (height >= 1 && height <= 23){
+
+  }
+}else{
+  alert('Please pick a number between 1 and 23');
+}
+
+var div = document.getElementById('mario-easy-output');
+div.innerHTML = ``;
+
   ////////////////////////// DO NOT MODIFY
   check('mario', height); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
