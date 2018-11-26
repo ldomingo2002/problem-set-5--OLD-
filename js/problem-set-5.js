@@ -168,7 +168,7 @@ function credit() {
 function guess() {
 
   // WRITE YOUR EXERCISE 4 CODE HERE
-var div = document.getElementById('guess-output');
+
 let input = prompt('Enter an integer between 1 and 1000');
 let random = Math.random( * 10001) + 1
 let answer = prompt('Try and guess which number was chosen!');
