@@ -28,7 +28,7 @@ function mario() {
 
   // WRITE YOUR EXERCISE 1 CODE HERE
 
-blocks = '#'
+
 
 height = prompt("Enter a whole number between 1 and 23");
 
@@ -168,21 +168,21 @@ function credit() {
 function guess() {
 
   // WRITE YOUR EXERCISE 4 CODE HERE
-
+var div = document.getElementById('guess-output');
 let input = prompt('Enter an integer between 1 and 1000');
 let random = Math.random( * 10001) + 1
+let answer = prompt('Try and guess which number was chosen!');
+let i =;
 
 if (input < 1 || input > 1000){
-  alert('Please pick a number between 1 and 1000');
-}
-
-if (input >= 1 && <= 1000){
-  let answer = prompt('Try and guess which number was chosen!');
+  alert('Please pick an integer between 1 and 1000');
+} else if (input >= 1 && <= 1000){
+  answer = prompt('Try and guess which number was chosen!');
 }
 
 if (answer != input){
   alert(`That's not the number, try again`);
-  let i = i++;
+  i = i++;
 }
 
 if (answer === input){
@@ -193,7 +193,7 @@ if (answer === input){
   ////////////////// DO NOT MODIFY
   check('guess'); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
-}
+
 
 /*
  * Hurricane. 5 points.
@@ -224,6 +224,28 @@ function hurricane() {
   ///////////////// DO NOT MODIFY
   let windspeed; // DO NOT MODIFY
   ///////////////// DO NOT MODIFY
+
+windspeed = prompt('Enter a non-negative integer to see which hurricane category it lands in if possible.');
+
+if (windspeed < 0){
+  alert('Please enter a non-negative integer');
+} else if (windspeed < 39 && > 0 ){
+  alert(`This windspeed doesn't fall into any category.`);
+} else if (windspeed >= 39 && <= 73){
+  alert('This windspeed falls into the Tropical Storm Category.');
+} else if (windspeed >= 74 && <= 95){
+  alert('This windspeed counts as a category 1 hurricane.');
+} else if (windspeed >= 96 && <= 110){
+  alert('This windspeed counts as a category 2 hurricane.');
+} else if (windspeed >= 111 && <= 129){
+  alert('This windspeed counts as a category 3 hurricane.');
+} else if (windspeed >= 130 && <= 156){
+  alert('This windspeed counts as a category 4 hurricane.');
+} else if (windspeed >= 157){
+  alert('This windspeed counts as a category 5 hurricane.');
+}
+
+var div = document.getElementById('hurricane-output');
 
   ///////////////////////////////// DO NOT MODIFY
   check('hurricane', windspeed); // DO NOT MODIFY
