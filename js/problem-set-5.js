@@ -33,7 +33,7 @@ blocks = '#'
 height = prompt("Enter a whole number between 1 and 23");
 
 if (height >= 1 && height <= 23){
-let block = height * block; 
+let block = height * block;
   }
 }else{
   alert('Please pick a number between 1 and 23');
@@ -169,6 +169,27 @@ function guess() {
 
   // WRITE YOUR EXERCISE 4 CODE HERE
 
+let input = prompt('Enter an integer between 1 and 1000');
+let random = Math.random( * 10001) + 1
+
+if (input < 1 || input > 1000){
+  alert('Please pick a number between 1 and 1000');
+}
+
+if (input >= 1 && <= 1000){
+  let answer = prompt('Try and guess which number was chosen!');
+}
+
+if (answer != input){
+  alert(`That's not the number, try again`);
+  let i = i++;
+}
+
+if (answer === input){
+  alert(`You are correct and it only took you ${i} times to guess the number!`);
+}
+
+}
   ////////////////// DO NOT MODIFY
   check('guess'); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
