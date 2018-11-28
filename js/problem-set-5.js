@@ -32,15 +32,7 @@ function mario() {
 
 height = prompt("Enter a whole number between 1 and 23");
 
-if (height >= 1 && height <= 23){
-let block = height * block;
-  }
-}else{
-  alert('Please pick a number between 1 and 23');
-}
-
-var div = document.getElementById('mario-easy-output');
-div.innerHTML = ``;
+var p = document.getElementById('mario-easy-output');
 
   ////////////////////////// DO NOT MODIFY
   check('mario', height); // DO NOT MODIFY
@@ -169,15 +161,16 @@ function guess() {
 
   // WRITE YOUR EXERCISE 4 CODE HERE
 
+
 let input = prompt('Enter an integer between 1 and 1000');
-let random = Math.random( * 10001) + 1
-let answer = prompt('Try and guess which number was chosen!');
+let random = Math.random( * 10001) + 1;
 let i =;
+let answer =;
 
 if (input < 1 || input > 1000){
   alert('Please pick an integer between 1 and 1000');
-} else if (input >= 1 && <= 1000){
-  answer = prompt('Try and guess which number was chosen!');
+} else if (input >= 1 && input <= 1000){
+  answer = prompt('Which number was chosen?');
 }
 
 if (answer != input){
@@ -186,10 +179,13 @@ if (answer != input){
 }
 
 if (answer === input){
-  alert(`You are correct and it only took you ${i} times to guess the number!`);
+  alert(`You're right and it only took you ${i} times to get the number!`);
 }
 
+var p = document.getElementById('guess-output');
+
 }
+
   ////////////////// DO NOT MODIFY
   check('guess'); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
@@ -245,13 +241,14 @@ if (windspeed < 0){
   alert('This windspeed counts as a category 5 hurricane.');
 }
 
-var div = document.getElementById('hurricane-output');
+var p = document.getElementById('hurricane-output');
 
   ///////////////////////////////// DO NOT MODIFY
   check('hurricane', windspeed); // DO NOT MODIFY
   ///////////////////////////////// DO NOT MODIFY
 }
 
+console.log(hurricane());
 /*
  * Gymnastics. 5 points.
  *
@@ -290,6 +287,9 @@ function gymnastics() {
    *       scores.push(secondScore);  // will likely be different than mine
    */
 
+let input = prompt('Enter six scores.');
+var p = document.getElementById('gymnastics-result');
+p.innerHTML = "";
   /////////////////////////////// DO NOT MODIFY
   check('gymnastics', scores); // DO NOT MODIFY
   /////////////////////////////// DO NOT MODIFY
