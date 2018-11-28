@@ -32,6 +32,7 @@ function mario() {
 
 height = prompt("Enter a whole number between 1 and 23");
 
+
 var p = document.getElementById('mario-easy-output');
 
   ////////////////////////// DO NOT MODIFY
@@ -114,7 +115,7 @@ function marioAgain() {
  * All output should be displayed on the page, not printed to the console.
  */
 
-function credit() {
+function credit(){
 
   //////////// DO NOT MODIFY
   let card; // DO NOT MODIFY
@@ -122,6 +123,9 @@ function credit() {
 
   // WRITE YOUR EXERCISE 3 CODE HERE
 card = prompt('Enter your credit card number');
+
+var div = document.getElementById('credit');
+
   /*
    * NOTE: After reading in the card number and storing it in the 'card'
    *       variable, do not modify it. If you find it necessary to manipulate
@@ -163,7 +167,7 @@ function guess() {
 
 
 let input = prompt('Enter an integer between 1 and 1000');
-let random = Math.random( * 10001) + 1;
+let random = Math.random(*10001) + 1;
 let i =;
 let answer =;
 
@@ -248,7 +252,7 @@ var p = document.getElementById('hurricane-output');
   ///////////////////////////////// DO NOT MODIFY
 }
 
-console.log(hurricane());
+
 /*
  * Gymnastics. 5 points.
  *
@@ -289,7 +293,9 @@ function gymnastics() {
 
 let input = prompt('Enter six scores.');
 var p = document.getElementById('gymnastics-result');
-p.innerHTML = "";
+p.innerHTML = ;
+
+total =
   /////////////////////////////// DO NOT MODIFY
   check('gymnastics', scores); // DO NOT MODIFY
   /////////////////////////////// DO NOT MODIFY
