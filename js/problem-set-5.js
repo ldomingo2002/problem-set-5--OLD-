@@ -28,9 +28,8 @@ function mario() {
 
   // WRITE YOUR EXERCISE 1 CODE HERE
 
-
-
 height = prompt("Enter a whole number between 1 and 23");
+
 
 
 var p = document.getElementById('mario-easy-output');
@@ -124,7 +123,8 @@ function credit(){
   // WRITE YOUR EXERCISE 3 CODE HERE
 card = prompt('Enter your credit card number');
 
-var div = document.getElementById('credit');
+
+var p = document.getElementById('credit-output');
 
   /*
    * NOTE: After reading in the card number and storing it in the 'card'
@@ -164,36 +164,33 @@ var div = document.getElementById('credit');
 function guess() {
 
   // WRITE YOUR EXERCISE 4 CODE HERE
+  let input = prompt('Enter an integer between 1 and 1000');
+  let random = Math.random(*10001) + 1;
+  let i = '';
+  let answer ='';
 
+  if (input < 1 || input > 1000){
+    alert('Please pick an integer between 1 and 1000');
+  } else if (input >= 1 && input <= 1000){
+    answer = prompt('Which number was chosen?');
+  }
 
-let input = prompt('Enter an integer between 1 and 1000');
-let random = Math.random(*10001) + 1;
-let i =;
-let answer =;
+  if (answer != input){
+    alert(`That's not the number, try again`);
+    i = i++;
+  }
 
-if (input < 1 || input > 1000){
-  alert('Please pick an integer between 1 and 1000');
-} else if (input >= 1 && input <= 1000){
-  answer = prompt('Which number was chosen?');
-}
+  if (answer === input){
+    alert(`You're right and it only took you ${i} times to get the number!`);
+  }
 
-if (answer != input){
-  alert(`That's not the number, try again`);
-  i = i++;
-}
-
-if (answer === input){
-  alert(`You're right and it only took you ${i} times to get the number!`);
-}
-
-var p = document.getElementById('guess-output');
-
-}
+  var p = document.getElementById('guess-output');
 
   ////////////////// DO NOT MODIFY
   check('guess'); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
 
+}
 
 /*
  * Hurricane. 5 points.
@@ -291,11 +288,27 @@ function gymnastics() {
    *       scores.push(secondScore);  // will likely be different than mine
    */
 
-let input = prompt('Enter six scores.');
-var p = document.getElementById('gymnastics-result');
-p.innerHTML = ;
+if (scores > 0.0 && <10.0){
+  numOne = prompt('Enter your first score');
+  numTwo = prompt('Enter your second score');
+  numThree = prompt('Enter your third score');
+  numFour = prompt('Enter your fourth score');
+  numFive = prompt('Enter your fifth score');
+  numSix = prompt('Enter your last score');
+}
 
-total =
+let numOne = ;
+let numTwo = ;
+let numThree = ;
+let numFour = ;
+let numFive = ;
+let numSix = ;
+
+scores = [numOne, numTwo, numThree, numFour, numFive, numSix];
+
+
+
+var p = document.getElementsByClassName('output');
   /////////////////////////////// DO NOT MODIFY
   check('gymnastics', scores); // DO NOT MODIFY
   /////////////////////////////// DO NOT MODIFY
